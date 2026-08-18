@@ -118,3 +118,40 @@
 ## Типовые архитектурные решения
 
 ### Вариант 1: ETL/ELT pipeline
+OLTP DB → (ETL process) → OLAP DB/Data Warehouse
+- Периодическая выгрузка данных (batch, каждые N минут/часов)
+- Трансформация и загрузка в аналитическую БД
+- Примеры: Airflow + dbt, Apache NiFi, Fivetran
+
+### Вариант 2: CDC (Change Data Capture)
+OLTP DB → (CDC tool) → Event Streaming → OLAP DB
+- Near real-time репликация изменений
+- Примеры: Debezium + Kafka + ClickHouse
+
+### Вариант 3: HTAP (Hybrid Transactional/Analytical Processing)
+Единая БД с двумя типами storage внутри
+- Row storage для OLTP, column storage для OLAP
+- Автоматическая синхронизация
+- Примеры: TiDB, Google AlloyDB, SAP HANA
+
+## Практические рекомендации
+
+1. **Разделяйте нагрузку:** Используйте отдельные системы для OLTP и OLAP
+2. **Определите SLA:** Какая задержка приемлема для аналитики?
+3. **Выберите модель синхронизации:** Batch (T+1) или real-time?
+4. **Мониторьте ресурсы:** OLAP не должен влиять на OLTP
+5. **Документируйте lag:** Аналитики должны понимать, насколько данные
+   актуальны
+
+## Пример из практики
+
+**Интернет-магазин:**
+- **OLTP:** PostgreSQL для заказов, пользователей, товаров
+- **OLAP:** ClickHouse для аналитики продаж, Clickstream для поведения
+- **Синхронизация:** Debezium (CDC) → Kafka → ClickHouse
+- **Latency:** Аналитика отстаёт на 5-10 секунд
+
+**Результат:**
+- OLTP-запросы: < 10 мс
+- OLAP-запросы (миллионы строк): < 2 секунды
+- Нет влияния аналитики на пользовательский опыт
