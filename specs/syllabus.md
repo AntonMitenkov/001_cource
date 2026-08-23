@@ -128,7 +128,7 @@
 
 ## Лекция 8: Cloud Native, managed databases и финальная сборка архитектуры
 **Номер:** 8  
-**Краткая цель:** Собрать итоговый архитектурный蓝图 (Blueprint) с использованием cloud-native подходов и managed сервисов.  
+**Краткая цель:** Собрать итоговый архитектурный (Blueprint) с использованием cloud-native подходов и managed сервисов.  
 **Ключевые темы:**
 - Cloud Native принципы: stateless, ephemeral, managed services
 - Managed Databases: плюсы, минусы, vendor lock-in
