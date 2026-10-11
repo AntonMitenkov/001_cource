@@ -274,7 +274,7 @@
 | **Спецификации уроков** (`specs/lessons/`) | 🟡 Частично | lesson-01 и lesson-02 заполнены; lesson-03 … lesson-08 — шаблоны с плейсхолдерами |
 | **Контент курса** (`content/lectures/01-intro-system-design/`) | 🟢 Готово | brief/outline/draft/practice/diagrams/review/final/slides созданы; fact-check требует проверки человеком |
 | **Контент курса** (`content/lectures/02-domain-and-requirements/`) | 🟢 Готово | brief/outline/draft/practice/diagrams/review/final/slides созданы; review — самопроверка агента, fact-check требует проверки человеком |
-| **Контент курса** (`content/lectures/03-architecture-styles/`) | 🟡 Черновик | 11.10.2026 перегенерирован по syllabus («Концептуальная и логическая модели данных. Нормализация и эволюция схемы»): brief/outline/draft + generation-report; старый контент «Архитектурные стили» — в `archive/lectures/legacy-03-architecture-styles/`; ожидают practice/diagrams/review(человек)/fact-check/final/slides |
+| **Контент курса** (`content/lectures/03-architecture-styles/`) | 🟡 Черновик | 11.10.2026 перегенерирован по syllabus («Концептуальная и логическая модели данных. Нормализация и эволюция схемы»): brief/outline/draft/practice/diagrams/slides + generation-report; review.md — AI-самопроверка, fact-check.md — протокол для человека; final.md — кандидат до ручного ревью; старый контент «Архитектурные стили» — в `archive/lectures/legacy-03-architecture-styles/` |
 | **Задачи** (`tasks/`) | 🟡 В работе | Бэклог обновлён: секции Лекций 1–3 отражают фактическое состояние; ложные [x] в шаблонном чек-листе сняты |
 
 ### Легенда:

@@ -50,19 +50,19 @@
 - [x] slides — `content/lectures/02-domain-and-requirements/slides.md`
 
 ### 3. Концептуальная и логическая модели данных. Нормализация и эволюция схемы
-**Статус:** 🟡 Перегенерация 11.10.2026: brief / outline / draft созданы заново по specs/syllabus.md; старый контент «Архитектурные стили» заархивирован в `archive/lectures/legacy-03-architecture-styles/`. Ожидают: case, practice, diagrams, review (человек), fact-check (человек), final, slides.
+**Статус:** 🟡 Перегенерация 11.10.2026: brief / outline / draft / practice / diagrams / slides созданы; review.md — AI-самопроверка (не заменяет человека); fact-check.md — заготовка, не выполнен; final.md создан как КАНДИДАТ (final-draft) и по правилу «не делать final без review» ждёт ручного ревью; старый контент «Архитектурные стили» заархивирован в `archive/lectures/legacy-03-architecture-styles/`.
 
 - [ ] spec — `specs/lessons/lesson-03.spec.md` существует, но это шаблон с плейсхолдерами (`title: "..."`, `domain: "маркетплейс / финтех / каршеринг / телемедицина"`, `required_skills: - ...`); статус `draft` НЕ менялся; заполнение title/domain — по команде пользователя
 - [x] brief — `content/lectures/03-architecture-styles/brief.md` (перегенерирован)
 - [x] outline — `content/lectures/03-architecture-styles/outline.md` (перегенерирован)
 - [x] draft — `content/lectures/03-architecture-styles/draft.md` (перегенерирован)
-- [ ] case — отдельный файл кейса не создавался (кейс встроен в draft; требуется решение, делать ли case.md)
-- [ ] practice — `content/lectures/03-architecture-styles/practice.md` — следующий этап
-- [ ] diagrams — `content/lectures/03-architecture-styles/diagrams.md` — следующий этап
-- [ ] review — требует проверки человеком (AI-самопроверка отражена в generation-report.md)
-- [ ] fact-check — требует проверки человеком
-- [ ] final — не может быть создан без пройденного review
-- [ ] slides — не создан
+- [ ] case — отдельный файл кейса не создавался (кейс встроен в draft/final; требуется решение, делать ли case.md)
+- [x] practice — `content/lectures/03-architecture-styles/practice.md` (по practice-contract, 4 варианта контекстов, критерии оценки)
+- [x] diagrams — `content/lectures/03-architecture-styles/diagrams.md` (8 диаграмм: Mermaid + ASCII)
+- [ ] review — `review.md` создан как AI-самопроверка; финальное ревью требует проверки человеком — пункт остаётся открытым
+- [ ] fact-check — `fact-check.md` создан как протокол со списком утверждений; заполняется только человеком — пункт открыт
+- [ ] final — `final.md` создан как кандидат (помечен final-draft, ожидает review+fact-check человеком); отметка [x] будет поставлена только после принятия рецензентом
+- [x] slides — `content/lectures/03-architecture-styles/slides.md` (23 слайда по slides-contract)
 
 2. Предметная область и требования
 3. Архитектурные стили
