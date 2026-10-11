@@ -75,19 +75,19 @@
 - [x] slides — `content/lectures/04-data-architecture-dbms/slides.md` (25 слайдов; кандидат до ручного review)
 
 ### 5. Взаимодействие приложений с СУБД, уязвимости и инструменты разработчика
-**Статус:** ⏳ Spec переписана под тему syllabus (старая тема «Интеграции/API/очереди» заменена), контент не создавался
+**Статус:** 🟢 Полный пакет сгенерирован (12.10.2026): brief→outline→draft→case→practice→diagrams→review(AI)→final(кандидат)→slides(кандидат); ждут человеческого вердикта review и заполнения fact-check. Папка: `content/lectures/05-app-db-interaction-security-tools/`. Замечание: Л5 была создана позже Л6 (инверсия порядка), учтено в generation-report Л5.
 
 - [x] spec — `specs/lessons/lesson-05.spec.md`
-- [ ] brief
-- [ ] outline
-- [ ] draft
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] brief — `content/lectures/05-app-db-interaction-security-tools/brief.md`
+- [x] outline — `content/lectures/05-app-db-interaction-security-tools/outline.md`
+- [x] draft — `content/lectures/05-app-db-interaction-security-tools/draft.md`
+- [x] case — `content/lectures/05-app-db-interaction-security-tools/case.md`
+- [x] practice — `content/lectures/05-app-db-interaction-security-tools/practice.md`
+- [x] diagrams — `content/lectures/05-app-db-interaction-security-tools/diagrams.md` (Д1–Д8)
+- [x] review — `content/lectures/05-app-db-interaction-security-tools/review.md` (AI-самопроверка, вердикт человека не выставлен — НЕ замена ревью)
+- [ ] fact-check — `content/lectures/05-app-db-interaction-security-tools/fact-check.md` (протокол создан, заполнение человеком — не выполнено)
+- [x] final — `content/lectures/05-app-db-interaction-security-tools/final.md` (кандидат в финал до прохождения review/fact-check человеком; как в Лекции 4)
+- [x] slides — `content/lectures/05-app-db-interaction-security-tools/slides.md` (кандидат до ручного review)
 
 ### 6. Надежность данных: репликация, резервное копирование и восстановление
 **Статус:** 🟢 Полный пакет сгенерирован (12.10.2026): brief→outline→draft→case→practice→diagrams→review(AI)→final(кандидат)→slides(кандидат); ждут человеческого вердикта review и заполнения fact-check. Папка: `content/lectures/06-data-reliability-recovery/`
@@ -105,19 +105,19 @@
 - [x] slides — `content/lectures/06-data-reliability-recovery/slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 7. System Design: финальная сборка, Peer-Review и защита отчета
-**Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
+**Статус:** 🟢 Полный пакет сгенерирован (12.10.2026): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; fact-check — протокол, ждёт человека; вердикт review — за человеком. Папка: `content/lectures/07-system-design-final-assembly-peer-review/`
 
 - [x] spec — `specs/lessons/lesson-07.spec.md`
-- [ ] brief
-- [ ] outline
-- [ ] draft
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] brief — `content/lectures/07-system-design-final-assembly-peer-review/brief.md`
+- [x] outline — `content/lectures/07-system-design-final-assembly-peer-review/outline.md`
+- [x] draft — `content/lectures/07-system-design-final-assembly-peer-review/draft.md`
+- [x] case — `content/lectures/07-system-design-final-assembly-peer-review/case.md`
+- [x] practice — `content/lectures/07-system-design-final-assembly-peer-review/practice.md`
+- [x] diagrams — `content/lectures/07-system-design-final-assembly-peer-review/diagrams.md` (Д1–Д8)
+- [x] review — `review.md` (AI-самопроверка; вердикт человека в §9 не выставлен — это НЕ замена ручному ревью)
+- [ ] fact-check — `fact-check.md` создан как протокол (17 пунктов, 6 ⚠️); заполнение человеком не выполнено
+- [x] final — `final.md` (КАНДИДАТ: до вердикта человека и закрытия fact-check)
+- [x] slides — `slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 8. Масштабирование: производительность, кэширование и аналитика (OLTP vs OLAP)
 **Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
