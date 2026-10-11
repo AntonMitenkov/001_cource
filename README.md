@@ -99,27 +99,24 @@
 │   │   ├── denormalization.md   # Денормализация: когда допустима, компромиссы, обязательный ADR
 │   │   └── schema-evolution.md  # Миграции БД: Flyway, Liquibase, паттерн Expand and Contract
 │   │
-│   ├── databases/               # Базы данных (Лекции 4, 5)
+│   ├── databases/               # Базы данных (Лекции 4–6, 8) — фактический состав:
 │   │   ├── dbms-types.md        # Типы СУБД: реляционные, документные, key-value, колоночные, графовые, векторные
 │   │   ├── dbms-history.md      # История эволюции: от файловых систем до векторных БД
+│   │   ├── acid-base.md         # ACID и BASE
 │   │   ├── transactions-acid.md # Транзакции: ACID, Commit/Rollback, уровни изоляции, Deadlocks
 │   │   ├── cap-pacelc.md        # CAP-теорема (Brewer) и PACELC (Abadi)
 │   │   ├── data-governance.md   # Data Governance: PII, GDPR, 152-ФЗ, crypto-shredding
-│   │   ├── db-interaction.md    # Взаимодействие с БД: драйверы, пулы соединений, ORM, проблема N+1
-│   │   ├── db-security.md       # Безопасность: SQL-инъекции, Prepared Statements, Least Privilege
-│   │   └── db-tools.md          # Инструменты: DBeaver, DataGrip, навигация по схеме
+│   │   ├── db-reliability.md    # Репликация, бэкапы, RPO/RTO, PITR, Fencing (Лекция 6)
+│   │   ├── oltp-olap.md         # OLTP vs OLAP: колоночное хранение (Лекция 8)
+│   │   └── storage-selection.md # Выбор хранилища под нагрузку
 │   │
-│   ├── reliability/             # Надёжность данных (Лекция 6)
-│   │   ├── replication.md       # Репликация: синхронная/асинхронная, Replication Lag, Split-Brain, Quorum
-│   │   ├── backups-recovery.md  # Бэкапы: Full/Incremental/Differential, PITR, золотое правило
-│   │   └── rpo-rto.md           # Метрики RPO и RTO, стратегии восстановления
+│   ├── integrations/            # Интеграции и очереди (Лекции 5, 7)
+│   │   ├── api-patterns.md, brokers.md, queues.md, dlq-retry.md,
+│   │   ├── outbox-inbox.md, event-streaming.md
 │   │
-│   └── scaling/                 # Масштабирование (Лекции 7, 8)
-│       ├── caching.md           # Кэширование: Cache-Aside, Write-Through/Behind, инвалидация (Karlton)
-│       ├── indexing.md          # Индексирование: B-Tree, компромиссы чтения/записи, стратегия
-│       ├── oltp-olap.md         # OLTP vs OLAP: колоночное хранение, архитектурная проблема
-│       ├── data-warehouse-etl.md # Data Warehouse, ETL vs ELT, схемы звезда/снежинка
-│       └── system-design-patterns.md # CQRS, Event Sourcing, шардирование, пример E-commerce
+│   └── course-style.md, glossary.md, no-hallucination.md — стили и правила курса
+# Примечание: отдельные каталоги knowledge/reliability/ и knowledge/scaling/ в репозитории
+# отсутствуют — их темы покрыты файлами knowledge/databases/db-reliability.md и oltp-olap.md.
 │
 ├── templates/                   # Шаблоны для генерации контента
 │   ├── lesson.md                # Шаблон лекции: структура, обязательные разделы
@@ -186,7 +183,7 @@
 ### Примеры команд для AI-агента:
 
 - "Сгенерируй Лекцию 1 по теме 'Введение в System Design', используя шаблон `templates/lesson.md` и базу знаний из `knowledge/system-design/`"
-- "Создай практику к Лекции 3 (нормализация), следуя `templates/practice.md` и `specs/practice-contract.md`"
+- "Создай практику к Лекции 3 (нормализация), следуя `templates/practice.md` и `specs/content-contracts/practice-contract.md`"
 - "Проверь сгенерированную Лекцию 4 на соответствие `specs/content-contracts/lesson-contract.md` и академической честности"
 - "Обнови глоссарий `knowledge/glossary.md` новыми терминами из Лекции 6 (RPO, RTO, PITR)"
 
@@ -223,7 +220,7 @@
 - Цитаты в формате APA/MLA
 
 #### Практики:
-- Соответствуют `specs/practice-contract.md`
+- Соответствуют `specs/content-contracts/practice-contract.md`
 - Связаны с кейсом лекции и итоговым Architecture Blueprint
 - Содержают: цель, входные данные, задание, шаблон результата, критерии оценки, типичные ошибки
 - Выполнимы без программирования (на уровне проектирования)
@@ -270,9 +267,9 @@
 |--------|--------|------------|
 | **Спецификации** (`specs/`) | 🟢 Готово | Syllabus — источник истины по темам; Charter, Learning Outcomes, Module Map, Practice Contract актуальны |
 | **База знаний** (`knowledge/`) | 🟢 Готово | Файлы по всем темам syllabus (system-design, domain-analysis, data-modeling, databases, integrations) |
-| **Шаблоны** (`templates/`) | 🟡 В работе | Базовые есть; требуется добавить `peer-review.md`, `architecture-brief.md` |
+| **Шаблоны** (`templates/`) | 🟢 Готово | Добавлены `templates/peer-review.md` (Л7) и `templates/architecture-brief.md` (Л1); опечатка `lesson-task.md.` исправлена |
 | **Спецификации уроков** (`specs/lessons/`) | 🟢 Готово | `lesson-01`–`lesson-08` синхронизированы с `specs/syllabus.md` (окт. 2026) |
-| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — полный пакет сгенерирован 11.10.2026 (`04-data-architecture-dbms`): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; ждут человеческого вердикта review и заполнения fact-check**; **Л6 — полный пакет сгенерирован 12.10.2026 (`06-data-reliability-recovery`): тот же конвейер, final/slides — кандидаты, ждут человека**; **Л5 — полный пакет сгенерирован 12.10.2026 (`05-app-db-interaction-security-tools`, создана позже Л6): тот же конвейер, final/slides — кандидаты**; **Л7 — полный пакет сгенерирован 12.10.2026 (`07-system-design-final-assembly-peer-review`): тот же конвейер (review AI, fact-check протокол, final/slides — кандидаты)**; Л8 — ожидает генерации |
+| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — полный пакет сгенерирован 11.10.2026 (`04-data-architecture-dbms`): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; ждут человеческого вердикта review и заполнения fact-check**; **Л6 — полный пакет сгенерирован 12.10.2026 (`06-data-reliability-recovery`): тот же конвейер, final/slides — кандидаты, ждут человека**; **Л5 — полный пакет сгенерирован 12.10.2026 (`05-app-db-interaction-security-tools`, создана позже Л6): тот же конвейер, final/slides — кандидаты**; **Л7 — полный пакет сгенерирован 12.10.2026 (`07-system-design-final-assembly-peer-review`): тот же конвейер (review AI, fact-check протокол, final/slides — кандидаты)**; **Л8 — полный пакет сгенерирован (`08-scaling-caching-oltp-olap`): final/slides — кандидаты, ждут human review / human fact-check**; **Л2 — добавлены Исикава/5 почему/BABOK/SMART/MoSCoW (коммит ebc76c9), расширен practice-контракт (задание B2 с rubric), мостик к Л3 приведён в соответствие с syllabus**; ⚠️ все final.md кроме Л2/Л8 ниже нормы объёма 85 000 знаков — расширение в работе (см. AUDIT_MAP.md) |
 | **Задачи** (`tasks/`) | 🟢 Актуально | `tasks/backlog.md` перестроен под нумерацию syllabus, отражает реальные статусы |
 
 ### Легенда:
