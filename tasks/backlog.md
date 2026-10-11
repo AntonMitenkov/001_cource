@@ -23,13 +23,13 @@
 - [x] practice — `content/lectures/01-intro-system-design/practice.md`
 - [x] diagrams — `content/lectures/01-intro-system-design/diagrams.md`
 - [x] review — `content/lectures/01-intro-system-design/review.md`
-- [ ] fact-check — требует проверки человеком
+- [ ] fact-check — реестр claim/source/confidence/status создан (коммит ee0a75c); закрытие — только человеком
 - [x] final — `content/lectures/01-intro-system-design/final.md`
 - [x] slides — `content/lectures/01-intro-system-design/slides.md`
 - [ ] ⚠️ правка: убрать фрагменты про LRU/FIFO-кэширование (тема Лекции 8 по syllabus)
 
 ### 2. Предметная область, анализ процессов (Event Storming), требования и диаграмма Исикавы
-**Статус:** ✅ Полный цикл до slides; ⚠️ ТРЕБУЕТ ДОРАБОТКИ: в контенте отсутствуют обязательные темы syllabus (Исикава/6M, «5 почему», BABOK, MoSCoW)
+**Статус:** 🟢 Полный цикл до slides. Теоретические блоки Исикава/6M, «5 почему», BABOK, SMART/MoSCoW добавлены (коммит ebc76c9); мостик к Л3 приведён в соответствие с syllabus и добавлены вопросы самопроверки по Блуму (коммит 3994d9e); practice расширен заданием ES+Исикава+5why+MoSCoW с рубрикой (коммит 7091a30); fact-check-реестр создан (ee0a75c). Остаток: расширение объёма final.md до нормы 85k (Этап E), человеческий review/fact-check.
 
 - [x] spec — `specs/lessons/lesson-02.spec.md` (синхр. с syllabus)
 - [x] brief — `content/lectures/02-domain-and-requirements/brief.md`
@@ -39,10 +39,11 @@
 - [x] practice — `content/lectures/02-domain-and-requirements/practice.md`
 - [x] diagrams — `content/lectures/02-domain-and-requirements/diagrams.md`
 - [x] review — `content/lectures/02-domain-and-requirements/review.md`
-- [ ] fact-check — требует проверки человеком
+- [ ] fact-check — реестр claim/source/confidence/status создан (коммит ee0a75c); закрытие — только человеком
 - [x] final — `content/lectures/02-domain-and-requirements/final.md`
 - [x] slides — `content/lectures/02-domain-and-requirements/slides.md`
-- [ ] ⚠️ доп. итерация: добавить в draft/final/slides блоки «Диаграмма Исикавы (6M)», «5 почему», «Виды требований (BABOK)», «SMART + MoSCoW» (см. knowledge/domain-analysis/ishikawa.md, requirements-babok.md)
+- [x] ⚠️ доп. итерация: блоки «Диаграмма Исикавы (6M)», «5 почему», «Виды требований (BABOK)», «SMART + MoSCoW» добавлены в final.md (ebc76c9) и practice.md (7091a30); синхронизация slides.md — остаточная задача
+- [ ] Расширение объёма final.md до ≥85 000 знаков (Этап E)
 
 ### 3. Концептуальная и логическая модели данных. Нормализация и эволюция схемы
 **Статус:** ✅ Перегенерирована по теме syllabus (PR #6). Полный цикл до final/slides; review — самопроверка агента, fact-check требует ручной проверки. Старый невалидный контент («Архитектурные стили») удалён из репозитория (см. историю: `archive/lectures/legacy-03-architecture-styles`)
@@ -70,7 +71,7 @@
 - [x] practice — `content/lectures/04-data-architecture-dbms/practice.md`
 - [x] diagrams — `content/lectures/04-data-architecture-dbms/diagrams.md` (8 диаграмм по перечню outline)
 - [x] review — `content/lectures/04-data-architecture-dbms/review.md` (**AI-самопроверка по чек-листу; человеческий вердикт в блоке 9 не выставлен** — файл не заменяет ручное ревью)
-- [ ] fact-check — требует проверки человеком (`fact-check.md` — протокол из 16 пунктов создан, не заполнен)
+- [ ] fact-check — протокол из 16 пунктов + реестр pending-human P-1…P-8 после снятия заглушек (коммит 9d8f98c); закрытие — только человеком
 - [x] final — `content/lectures/04-data-architecture-dbms/final.md` (кандидат в финал до прохождения review/fact-check человеком; как в Лекции 3)
 - [x] slides — `content/lectures/04-data-architecture-dbms/slides.md` (25 слайдов; кандидат до ручного review)
 
@@ -85,7 +86,7 @@
 - [x] practice — `content/lectures/05-app-db-interaction-security-tools/practice.md`
 - [x] diagrams — `content/lectures/05-app-db-interaction-security-tools/diagrams.md` (Д1–Д8)
 - [x] review — `content/lectures/05-app-db-interaction-security-tools/review.md` (AI-самопроверка, вердикт человека не выставлен — НЕ замена ревью)
-- [ ] fact-check — `content/lectures/05-app-db-interaction-security-tools/fact-check.md` (протокол создан, заполнение человеком — не выполнено)
+- [ ] fact-check — протокол создан + реестр pending-human P-1…P-6 после снятия заглушек (коммит bd6fd24); заполнение человеком — не выполнено
 - [x] final — `content/lectures/05-app-db-interaction-security-tools/final.md` (кандидат в финал до прохождения review/fact-check человеком; как в Лекции 4)
 - [x] slides — `content/lectures/05-app-db-interaction-security-tools/slides.md` (кандидат до ручного review)
 
@@ -120,16 +121,49 @@
 - [x] slides — `slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 8. Масштабирование: производительность, кэширование и аналитика (OLTP vs OLAP)
-**Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
+**Статус:** 🟢 Полный пакет сгенерирован; Л8 переписана как самодостаточный кандидат (коммит ebc76c9): структура 18 H2, без ссылок на draft. Ждут человеческого вердикта review и заполнения fact-check. Папка: `content/lectures/08-scaling-caching-oltp-olap/`
 
 - [x] spec — `specs/lessons/lesson-08.spec.md`
-- [ ] brief
-- [ ] outline
-- [ ] draft
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] brief — `content/lectures/08-scaling-caching-oltp-olap/brief.md`
+- [x] outline — `content/lectures/08-scaling-caching-oltp-olap/outline.md`
+- [x] draft — `content/lectures/08-scaling-caching-oltp-olap/draft.md`
+- [x] case — `content/lectures/08-scaling-caching-oltp-olap/case.md`
+- [x] practice — `content/lectures/08-scaling-caching-oltp-olap/practice.md`
+- [x] diagrams — `content/lectures/08-scaling-caching-oltp-olap/diagrams.md`
+- [x] review — `content/lectures/08-scaling-caching-oltp-olap/review.md` (AI-самопроверка, вердикт человека не выставлен)
+- [ ] fact-check — `content/lectures/08-scaling-caching-oltp-olap/fact-check.md` (заполнение человеком — не выполнено)
+- [x] final — `content/lectures/08-scaling-caching-oltp-olap/final.md` (кандидат; объём ≈46.5k — ниже нормы 85k, расширение в Этапе E)
+- [x] slides — `content/lectures/08-scaling-caching-oltp-olap/slides.md` (кандидат до ручного review)
+
+
+## Задачи коррекции (план AUDIT_MAP / этапный план, октябрь 2026)
+
+### Закрыто
+- [x] A1/A2/A3: снятие всех заглушек `[требуется проверка]` в final.md Л4–Л7 (коммиты 9d8f98c, bd6fd24, c67d1bb); тотальный grep = пусто
+- [x] CJK-артефакты удалены, повторный скан чистый (коммит 73da3a5)
+- [x] B1: мостик Л2→Л3 по syllabus (3994d9e)
+- [x] B2: practice Л2 — задание Исикава/5why/ES/MoSCoW + рубрика (7091a30)
+- [x] C1: переименование шаблона lesson-task.md. → lesson-task.md (7c2d38c)
+- [x] C2: templates/peer-review.md, templates/architecture-brief.md + ссылки из README/practice Л1/Л7 (078a5fb, 73244c8)
+- [x] C3: README синхронизирован с реальным состоянием (c6cd92d)
+- [x] C4: единые статусные шапки-кандидаты во всех 8 final.md (471829e)
+- [x] D1: fact-check-реестры Л1, Л2 созданы; pending-human в Л4–Л7 зарегистрированы (ee0a75c)
+
+### Открыто (Этап E — расширение объёма до ≥85 000 знаков; порядок Л8→Л2→Л4→Л5→Л6→Л3→Л7→Л1)
+- [ ] E-Л8: теория +кейсы +real-team +FAQ +самопроверка +связка с «Базы данных» +пересчёт тайминга (дефицит ≈38.5k)
+- [ ] E-Л2: расширение блоков (дефицит ≈33k)
+- [ ] E-Л4: расширение (дефицит ≈50.7k)
+- [ ] E-Л5: расширение (дефицит ≈63.9k)
+- [ ] E-Л6: расширение (дефицит ≈63.7k)
+- [ ] E-Л3: расширение + отдельные секции 1.8 (управленческие решения) и 1.9 (визуальные материалы) по аудиту (дефицит ≈65k)
+- [ ] E-Л7: расширение + секция 1.9 (дефицит ≈67k)
+- [ ] E-Л1: расширение + fact-check человеком (дефицит ≈67.4k)
+
+### Открыто (Этап F)
+- [ ] F1: GLOSSARY-CONFLICTS.md — денормализация Л3↔Л8, OLAP/DWH, SLA/SLO, consistency, кэш vs connection pool
+- [ ] F2: сквозная проверка ссылок knowledge//specs//content/ и «см. Лекцию N»
+- [ ] F3: вычитка новых блоков (аббревиатуры, двойные прочтения, код ≤10 строк, обращение «вы»)
+
+### Открыто (Этап G/H)
+- [ ] G: VERIFICATION_REPORT.md (8 проверок)
+- [ ] H: итоговый отчёт; остаточные риски для человека (review×8, fact-check×8, юридика 152-ФЗ/GDPR)
