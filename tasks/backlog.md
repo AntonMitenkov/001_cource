@@ -60,17 +60,17 @@
 - [x] slides — `content/lectures/03-data-modeling-normalization/slides.md`
 
 ### 4. История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance
-**Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
+**Статус:** 🟡 brief → outline → draft → case/practice/diagrams закрыты (11.10.2026, `content/lectures/04-data-architecture-dbms/`); следующий этап — человеческое review + fact-check, затем final/slides; spec не менялась (status: draft)
 
 - [x] spec — `specs/lessons/lesson-04.spec.md`
-- [ ] brief
-- [ ] outline
-- [ ] draft
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
+- [x] brief — `content/lectures/04-data-architecture-dbms/brief.md`
+- [x] outline — `content/lectures/04-data-architecture-dbms/outline.md`
+- [x] draft — `content/lectures/04-data-architecture-dbms/draft.md` (с AI-самопроверкой в generation-report.md; человеческое ревью не проводилось)
+- [x] case — `content/lectures/04-data-architecture-dbms/case.md` (развёрнутая версия; лекционная часть также встроена в draft, Case Study 20 мин)
+- [x] practice — `content/lectures/04-data-architecture-dbms/practice.md`
+- [x] diagrams — `content/lectures/04-data-architecture-dbms/diagrams.md` (8 диаграмм по перечню outline)
+- [ ] review — требует человеческого ревью (AI-самопроверка в generation-report.md ревью не заменяет)
+- [ ] fact-check — требует проверки человеком (список вопросов «[требуется проверка]» — в generation-report.md)
 - [ ] final
 - [ ] slides
 
