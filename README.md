@@ -271,9 +271,11 @@
 | **Спецификации** (`specs/`) | 🟢 Готово | Syllabus, Charter, Learning Outcomes, Module Map, Practice Contract обновлены под новый план |
 | **База знаний** (`knowledge/`) | 🟡 В работе | Требуется создать 30+ файлов по новой структуре (см. план обновления) |
 | **Шаблоны** (`templates/`) | 🟡 В работе | Базовые есть; требуется добавить `peer-review.md`, `architecture-brief.md` |
-| **Спецификации уроков** (`specs/lessons/`) | 🔴 Не начато | Требуется создать `lesson-01.spec.md` ... `lesson-08.spec.md` |
-| **Контент курса** (`content/`) | 🔴 Не начато | Ожидает заполнения после подготовки knowledge/ и specs/lessons/ |
-| **Задачи** (`tasks/`) | 🟡 В работе | Бэклог создан, требует приоритизации |
+| **Спецификации уроков** (`specs/lessons/`) | 🟡 Частично | lesson-01 и lesson-02 заполнены; lesson-03 … lesson-08 — шаблоны с плейсхолдерами |
+| **Контент курса** (`content/lectures/01-intro-system-design/`) | 🟢 Готово | brief/outline/draft/practice/diagrams/review/final/slides созданы; fact-check требует проверки человеком |
+| **Контент курса** (`content/lectures/02-domain-and-requirements/`) | 🟢 Готово | brief/outline/draft/practice/diagrams/review/final/slides созданы; review — самопроверка агента, fact-check требует проверки человеком |
+| **Контент курса** (`content/lectures/03-architecture-styles/`) | 🟡 Черновик | 11.10.2026 перегенерирован по syllabus («Концептуальная и логическая модели данных. Нормализация и эволюция схемы»): brief/outline/draft + generation-report; старый контент «Архитектурные стили» — в `archive/lectures/legacy-03-architecture-styles/`; ожидают practice/diagrams/review(человек)/fact-check/final/slides |
+| **Задачи** (`tasks/`) | 🟡 В работе | Бэклог обновлён: секции Лекций 1–3 отражают фактическое состояние; ложные [x] в шаблонном чек-листе сняты |
 
 ### Легенда:
 - 🟢 Готово
@@ -282,7 +284,7 @@
 
 ---
 
-**Дата последнего обновления:** 07 сентября 2026
+**Дата последнего обновления:** 11 октября 2026
 **Версия структуры:** 2.0 (обновлено под новый план из 8 лекций)
 **Ответственный:** AI-агент генерации курса
 **Связь с следующим семестром:** Итоговый Architecture Blueprint → ТЗ для курса "Базы данных" (PostgreSQL, MongoDB, Redis, Qdrant)
