@@ -45,19 +45,19 @@
 - [ ] ⚠️ доп. итерация: добавить в draft/final/slides блоки «Диаграмма Исикавы (6M)», «5 почему», «Виды требований (BABOK)», «SMART + MoSCoW» (см. knowledge/domain-analysis/ishikawa.md, requirements-babok.md)
 
 ### 3. Концептуальная и логическая модели данных. Нормализация и эволюция схемы
-**Статус:** 🔄 СПЕКА ОБНОВЛЕНА под syllabus. Существующий контент («Архитектурные стили») НЕ соответствует теме — требуется перегенерация, старый контент в архив
+**Статус:** ✅ Перегенерирована по теме syllabus (PR #6). Полный цикл до final/slides; review — самопроверка агента, fact-check требует ручной проверки. Старый невалидный контент («Архитектурные стили») удалён из репозитория (см. историю: `archive/lectures/legacy-03-architecture-styles`)
 
 - [x] spec — `specs/lessons/lesson-03.spec.md` (синхр. с syllabus)
-- [ ] brief — старый `content/lectures/03-architecture-styles/brief.md` невалиден (архив: `content/archive/03-architecture-styles/`)
-- [ ] outline — невалиден (архив)
-- [ ] draft — невалиден (архив)
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] brief — `content/lectures/03-data-modeling-normalization/brief.md`
+- [x] outline — `content/lectures/03-data-modeling-normalization/outline.md`
+- [x] draft — `content/lectures/03-data-modeling-normalization/draft.md`
+- [ ] case — (отдельный файл не создавался, кейс встроен в draft/final)
+- [x] practice — `content/lectures/03-data-modeling-normalization/practice.md`
+- [x] diagrams — `content/lectures/03-data-modeling-normalization/diagrams.md`
+- [x] review — `content/lectures/03-data-modeling-normalization/review.md` (самопроверка агента; финальное ревью человеком не выполнено)
+- [ ] fact-check — требует проверки человеком (`fact-check.md` — протокол вопросов)
+- [x] final — `content/lectures/03-data-modeling-normalization/final.md` (кандидат в финал до прохождения review/fact-check человеком)
+- [x] slides — `content/lectures/03-data-modeling-normalization/slides.md`
 
 ### 4. История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance
 **Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
