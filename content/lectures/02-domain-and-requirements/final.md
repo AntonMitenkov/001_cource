@@ -1,5 +1,7 @@
 # Лекция 2. Предметная область и требования: DDD, Event Storming, Quality Attribute Scenarios
 
+> Статус: кандидат в final. Причина: ожидает human review / human fact-check. Источник истины темы: specs/syllabus.md, Лекция 2.
+
 ## Цель занятия
 
 Научить студентов декомпозировать сложную предметную область с помощью методов Domain-Driven Design (DDD), выявлять ключевые бизнес-события через Event Storming и формализовать требования к качеству системы через Quality Attribute Scenarios.

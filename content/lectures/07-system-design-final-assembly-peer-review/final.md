@@ -1,6 +1,6 @@
 # Лекция 7. System Design: финальная сборка, Peer-Review и защита отчета
 
-> Статус: final черновика (review/fact-check — AI-версии, человеческое подтверждение не проводилось). Spec: `specs/lessons/lesson-07.spec.md`. Тема и тайминг — по `specs/syllabus.md` и `specs/content-contracts/lesson-contract.md` (80 мин).
+> Статус: кандидат в final. Причина: ожидает human review / human fact-check. Источник истины темы: specs/syllabus.md, Лекция 7.
 
 ## Цель занятия
 Собрать все проектные слои курса (требования, домен, модель данных, СУБД, каналы доступа, надёжность) в единый Architecture Blueprint; научиться обосновывать паттерны сборки через trade-offs; освоить процедуру Peer-Review по рубрике и структуру защиты архитектурного решения перед технической и бизнес-аудиторией.

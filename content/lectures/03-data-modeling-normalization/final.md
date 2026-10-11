@@ -1,8 +1,6 @@
 # Лекция 3. Концептуальная и логическая модели данных. Нормализация и эволюция схемы
 
-> **Статус: финальный черновик (final-draft).** Создан из `draft.md` после этапов brief → outline → draft → practice → diagrams.
-> **Не является финалом процесса генерации:** `review` и `fact-check` по правилам курса выполняет **только человек** (см. `review.md`, `tasks/backlog.md`). До их прохождения документ считается кандидатом в final.
-> Источник истины темы: `specs/syllabus.md`, раздел «Лекция 3». Предыдущая лекция: `content/lectures/02-domain-and-requirements/final.md`.
+> Статус: кандидат в final. Причина: ожидает human review / human fact-check. Источник истины темы: specs/syllabus.md, Лекция 3.
 
 ## Цель занятия
 

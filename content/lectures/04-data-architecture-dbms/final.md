@@ -1,8 +1,6 @@
 # Лекция 4. История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance
 
-> **Статус: финальный черновик (final-draft).** Создан из `draft.md` после этапов brief → outline → draft → case → practice → diagrams; самопроверка — `review.md`, протокол фактчекинга — `fact-check.md`.
-> **Не является финалом процесса генерации:** этапы **review** и **fact-check** по правилам курса завершает **только человек**. До их прохождения документ считается кандидатом в final (та же процедура, что в Лекции 3).
-> Источник истины темы: `specs/syllabus.md`, раздел «Лекция 4»; требования — `specs/lessons/lesson-04.spec.md`. Предыдущая лекция: `content/lectures/03-data-modeling-normalization/final.md`.
+> Статус: кандидат в final. Причина: ожидает human review / human fact-check. Источник истины темы: specs/syllabus.md, Лекция 4.
 
 ## Цель занятия
 
