@@ -105,7 +105,7 @@
 - [x] slides — `content/lectures/06-data-reliability-recovery/slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 7. System Design: финальная сборка, Peer-Review и защита отчета
-**Статус:** 🟡 Этап brief→outline→draft (+case/practice/diagrams) закрыт (12.10.2026); ждут человеческого review/fact-check; final/slides не создавались (конвейер: final только после review). Папка: `content/lectures/07-system-design-final-assembly-peer-review/`
+**Статус:** 🟢 Полный пакет сгенерирован (12.10.2026): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; fact-check — протокол, ждёт человека; вердикт review — за человеком. Папка: `content/lectures/07-system-design-final-assembly-peer-review/`
 
 - [x] spec — `specs/lessons/lesson-07.spec.md`
 - [x] brief — `content/lectures/07-system-design-final-assembly-peer-review/brief.md`
@@ -114,10 +114,10 @@
 - [x] case — `content/lectures/07-system-design-final-assembly-peer-review/case.md`
 - [x] practice — `content/lectures/07-system-design-final-assembly-peer-review/practice.md`
 - [x] diagrams — `content/lectures/07-system-design-final-assembly-peer-review/diagrams.md` (Д1–Д8)
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] review — `review.md` (AI-самопроверка; вердикт человека в §9 не выставлен — это НЕ замена ручному ревью)
+- [ ] fact-check — `fact-check.md` создан как протокол (17 пунктов, 6 ⚠️); заполнение человеком не выполнено
+- [x] final — `final.md` (КАНДИДАТ: до вердикта человека и закрытия fact-check)
+- [x] slides — `slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 8. Масштабирование: производительность, кэширование и аналитика (OLTP vs OLAP)
 **Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
