@@ -272,7 +272,7 @@
 | **База знаний** (`knowledge/`) | 🟢 Готово | Файлы по всем темам syllabus (system-design, domain-analysis, data-modeling, databases, integrations) |
 | **Шаблоны** (`templates/`) | 🟡 В работе | Базовые есть; требуется добавить `peer-review.md`, `architecture-brief.md` |
 | **Спецификации уроков** (`specs/lessons/`) | 🟢 Готово | `lesson-01`–`lesson-08` синхронизированы с `specs/syllabus.md` (окт. 2026) |
-| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — полный пакет сгенерирован 11.10.2026 (`04-data-architecture-dbms`): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; ждут человеческого вердикта review и заполнения fact-check**; Л5–8 — ожидает генерации |
+| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — полный пакет сгенерирован 11.10.2026 (`04-data-architecture-dbms`): brief→outline→draft→case/practice/diagrams→review(AI)→final(кандидат)→slides; ждут человеческого вердикта review и заполнения fact-check**; **Л6 — полный пакет сгенерирован 12.10.2026 (`06-data-reliability-recovery`): тот же конвейер, final/slides — кандидаты, ждут человека**; Л5, Л7–8 — ожидает генерации |
 | **Задачи** (`tasks/`) | 🟢 Актуально | `tasks/backlog.md` перестроен под нумерацию syllabus, отражает реальные статусы |
 
 ### Легенда:
@@ -282,7 +282,7 @@
 
 ---
 
-**Дата последнего обновления:** 11 октября 2026
+**Дата последнего обновления:** 12 октября 2026
 **Версия структуры:** 2.0 (обновлено под новый план из 8 лекций)
 **Ответственный:** AI-агент генерации курса
 **Связь с следующим семестром:** Итоговый Architecture Blueprint → ТЗ для курса "Базы данных" (PostgreSQL, MongoDB, Redis, Qdrant)

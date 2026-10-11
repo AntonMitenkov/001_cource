@@ -90,19 +90,19 @@
 - [ ] slides
 
 ### 6. Надежность данных: репликация, резервное копирование и восстановление
-**Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
+**Статус:** 🟢 Полный пакет сгенерирован (12.10.2026): brief→outline→draft→case→practice→diagrams→review(AI)→final(кандидат)→slides(кандидат); ждут человеческого вердикта review и заполнения fact-check. Папка: `content/lectures/06-data-reliability-recovery/`
 
 - [x] spec — `specs/lessons/lesson-06.spec.md`
-- [ ] brief
-- [ ] outline
-- [ ] draft
-- [ ] case
-- [ ] practice
-- [ ] diagrams
-- [ ] review
-- [ ] fact-check
-- [ ] final
-- [ ] slides
+- [x] brief — `content/lectures/06-data-reliability-recovery/brief.md`
+- [x] outline — `content/lectures/06-data-reliability-recovery/outline.md`
+- [x] draft — `content/lectures/06-data-reliability-recovery/draft.md`
+- [x] case — `content/lectures/06-data-reliability-recovery/case.md`
+- [x] practice — `content/lectures/06-data-reliability-recovery/practice.md`
+- [x] diagrams — `content/lectures/06-data-reliability-recovery/diagrams.md` (Д1–Д8)
+- [x] review — `content/lectures/06-data-reliability-recovery/review.md` (AI-самопроверка, вердикт человека не выставлен — НЕ замена ревью)
+- [ ] fact-check — `content/lectures/06-data-reliability-recovery/fact-check.md` (протокол создан, заполнение человеком — не выполнено)
+- [x] final — `content/lectures/06-data-reliability-recovery/final.md` (кандидат в финал до прохождения review/fact-check человеком; как в Лекции 4)
+- [x] slides — `content/lectures/06-data-reliability-recovery/slides.md` (25 слайдов, кандидат до ручного review)
 
 ### 7. System Design: финальная сборка, Peer-Review и защита отчета
 **Статус:** ⏳ Spec готова (синхр. с syllabus), контент не создавался
