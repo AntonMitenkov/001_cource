@@ -1,6 +1,6 @@
 ---
 id: lesson-04
-title: "Архитектура данных и выбор СУБД."
+title: "История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance"
 status: draft
 duration: 80
 domain: "маркетплейс / финтех / каршеринг / телемедицина"
@@ -9,43 +9,36 @@ depends_on:
 next:
   - lesson-05
 required_skills:
-  - ...
+  - логическая модель данных (3НФ) из Лекции 3
 ---
-Обнови specs/lessons/lesson-04.spec.md.
 
-Тема:
-"Архитектура данных и выбор СУБД".
+Синхронизировано с `specs/syllabus.md` (источник истины).
 
-### обязательные концепции:
-- Conceptual / Logical / Physical Data Model;
-- ERD;
-- normalization;
-- OLTP / OLAP;
-- ACID / BASE;
-- CAP;
-- Polyglot Persistence;
-- Source of Truth;
-- Derived Store;
-- Storage Selection Matrix.
+Тема: «История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance».
 
-### обязательные типы СУБД:
-- relational;
-- key-value;
-- document;
-- wide-column;
-- graph;
-- time-series;
-- search engine;
-- vector DB;
-- object storage;
-- data warehouse / lakehouse;
-- event streaming platform.
+Краткая цель: сформировать понимание ландшафта современных СУБД, принципов транзакций (ACID) и подходов к защите и управлению данными (Data Governance).
 
-### практика:
-студенты заполняют Storage Selection Matrix для маркетплейса.
+### Обязательные концепции:
+- эволюция СУБД: от иерархических до векторных и NoSQL;
+- критерии выбора СУБД под конкретные задачи (Storage Selection Matrix);
+- распределённые системы: теоремы CAP и PACELC;
+- транзакции, свойства ACID, Commit/Rollback; уровни изоляции и проблемы конкурентного доступа (Dirty Read, Lost Update, Deadlock);
+- OLTP vs OLAP; BASE; Polyglot Persistence; Source of Truth / Derived Store;
+- целостность данных и Data Governance: PII, GDPR, 152-ФЗ, крипто-шреддинг.
 
-### acceptance criteria:
-- студент понимает отличие OLTP от OLAP;
-- студент может выбрать класс СУБД под задачу;
-- студент понимает, что одна БД не должна решать все задачи;
-- студент умеет определять source of truth и derived stores.
+### Типы СУБД (обзор через trade-offs, примеры а не стандарты):
+relational, key-value, document, wide-column, graph, time-series, search engine, vector DB, object storage, data warehouse / lakehouse, event streaming platform.
+
+### Практика:
+заполнить Storage Selection Matrix для учебного кейса; обосновать выбор класса СУБД, анализ по PACELC и стратегию защиты PII.
+
+### Acceptance criteria:
+- студент различает классы СУБД и выбирает класс под задачу и паттерн доступа;
+- студент объясняет ACID, уровни изоляции и аномалии конкурентного доступа;
+- студент анализирует распределённую БД через CAP/PACELC;
+- студент понимает, что одна БД не решает все задачи (source of truth vs derived stores);
+- студент проектирует базовую стратегию Data Governance (PII, GDPR/152-ФЗ, crypto-shredding).
+
+### Связь с лекциями:
+- предыдущая: выбирает технологический стек для логических моделей, спроектированных в Лекции 3;
+- следующая: переходит к практическим аспектам взаимодействия приложения с выбранной СУБД (Лекция 5).
