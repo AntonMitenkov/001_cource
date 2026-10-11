@@ -272,7 +272,7 @@
 | **База знаний** (`knowledge/`) | 🟢 Готово | Файлы по всем темам syllabus (system-design, domain-analysis, data-modeling, databases, integrations) |
 | **Шаблоны** (`templates/`) | 🟡 В работе | Базовые есть; требуется добавить `peer-review.md`, `architecture-brief.md` |
 | **Спецификации уроков** (`specs/lessons/`) | 🟢 Готово | `lesson-01`–`lesson-08` синхронизированы с `specs/syllabus.md` (окт. 2026) |
-| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — brief → outline → draft созданы 11.10.2026 (`04-data-architecture-dbms`), ждут review/fact-check и этапов case/practice/diagrams**; Л5–8 — ожидает генерации |
+| **Контент курса** (`content/`) | 🟡 В работе | Л1, Л2, Л3 — полный цикл до final/slides (Л3 перегенерирована по теме syllabus; Л2 требует добор тем: Исикава/BABOK/MoSCoW); fact-check по Л1–Л3 ждёт ручной проверки; **Л4 — brief → outline → draft → case/practice/diagrams созданы 11.10.2026 (`04-data-architecture-dbms`), ждут человеческого review/fact-check**; Л5–8 — ожидает генерации |
 | **Задачи** (`tasks/`) | 🟢 Актуально | `tasks/backlog.md` перестроен под нумерацию syllabus, отражает реальные статусы |
 
 ### Легенда:
