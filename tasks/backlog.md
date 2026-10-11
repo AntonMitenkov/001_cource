@@ -60,7 +60,7 @@
 - [x] slides — `content/lectures/03-data-modeling-normalization/slides.md`
 
 ### 4. История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance
-**Статус:** 🟡 brief → outline → draft → case/practice/diagrams закрыты (11.10.2026, `content/lectures/04-data-architecture-dbms/`); следующий этап — человеческое review + fact-check, затем final/slides; spec не менялась (status: draft)
+**Статус:** 🟢 Полный пакет сгенерирован (11.10.2026, `content/lectures/04-data-architecture-dbms/`): brief → outline → draft → case/practice/diagrams → review (AI-самопроверка) → final-кандидат → slides. Ожидается **человеческое** решение вердикта в `review.md` и заполнение `fact-check.md`; до них final/slides — кандидаты. Spec не менялась (status: draft)
 
 - [x] spec — `specs/lessons/lesson-04.spec.md`
 - [x] brief — `content/lectures/04-data-architecture-dbms/brief.md`
@@ -69,10 +69,10 @@
 - [x] case — `content/lectures/04-data-architecture-dbms/case.md` (развёрнутая версия; лекционная часть также встроена в draft, Case Study 20 мин)
 - [x] practice — `content/lectures/04-data-architecture-dbms/practice.md`
 - [x] diagrams — `content/lectures/04-data-architecture-dbms/diagrams.md` (8 диаграмм по перечню outline)
-- [ ] review — требует человеческого ревью (AI-самопроверка в generation-report.md ревью не заменяет)
-- [ ] fact-check — требует проверки человеком (список вопросов «[требуется проверка]» — в generation-report.md)
-- [ ] final
-- [ ] slides
+- [x] review — `content/lectures/04-data-architecture-dbms/review.md` (**AI-самопроверка по чек-листу; человеческий вердикт в блоке 9 не выставлен** — файл не заменяет ручное ревью)
+- [ ] fact-check — требует проверки человеком (`fact-check.md` — протокол из 16 пунктов создан, не заполнен)
+- [x] final — `content/lectures/04-data-architecture-dbms/final.md` (кандидат в финал до прохождения review/fact-check человеком; как в Лекции 3)
+- [x] slides — `content/lectures/04-data-architecture-dbms/slides.md` (25 слайдов; кандидат до ручного review)
 
 ### 5. Взаимодействие приложений с СУБД, уязвимости и инструменты разработчика
 **Статус:** ⏳ Spec переписана под тему syllabus (старая тема «Интеграции/API/очереди» заменена), контент не создавался
