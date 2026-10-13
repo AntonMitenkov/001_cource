@@ -26,7 +26,7 @@
 - [ ] fact-check — реестр claim/source/confidence/status создан (коммит ee0a75c); закрытие — только человеком
 - [x] final — `content/lectures/01-intro-system-design/final.md`
 - [x] slides — `content/lectures/01-intro-system-design/slides.md`
-- [ ] ⚠️ правка: убрать фрагменты про LRU/FIFO-кэширование (тема Лекции 8 по syllabus)
+- [x] ⚠️ правка: убрать фрагменты про LRU/FIFO-кэширование (тема Лекции 8 по syllabus) — выполнено; повторная проверка 14.10.2026: регистронезависимый grep по всей папке `01-intro-system-design/` — 0 вхождений
 
 ### 2. Предметная область, анализ процессов (Event Storming), требования и диаграмма Исикавы
 **Статус:** 🟢 Полный цикл до slides. Теоретические блоки Исикава/6M, «5 почему», BABOK, SMART/MoSCoW добавлены (коммит ebc76c9); мостик к Л3 приведён в соответствие с syllabus и добавлены вопросы самопроверки по Блуму (коммит 3994d9e); practice расширен заданием ES+Исикава+5why+MoSCoW с рубрикой (коммит 7091a30); fact-check-реестр создан (ee0a75c). Остаток: расширение объёма final.md до нормы 85k (Этап E), человеческий review/fact-check.
