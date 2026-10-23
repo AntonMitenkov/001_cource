@@ -46,19 +46,20 @@
 - [ ] Расширение объёма final.md до ≥85 000 знаков (Этап E)
 
 ### 3. Концептуальная и логическая модели данных. Нормализация и эволюция схемы
-**Статус:** ✅ Перегенерирована по теме syllabus (PR #6). Полный цикл до final/slides; review — самопроверка агента, fact-check требует ручной проверки. Старый невалидный контент («Архитектурные стили») удалён из репозитория (см. историю: `archive/lectures/legacy-03-architecture-styles`)
+**Статус:** 🟢 ФИНАЛ (20.10.2026): человеческий review закрыт вердиктом «Готов к итоговой генерации» (review.md, блок «Вердикт (Преподаватель)»), fact-check заполнен человеком (замечания №1–2 применены к тексту final/slides/practice), final.md переведён из кандидатов в финальную версию. Открытые хвосты: регламент академической честности (fact-check п.8, не блокирует), расширение объёма до нормы 85k (Этап E — поверх принятого текста). Старый невалидный контент («Архитектурные стили») удалён из репозитория (см. историю: `archive/lectures/legacy-03-architecture-styles`)
 
-- [x] spec — `specs/lessons/lesson-03.spec.md` (синхр. с syllabus)
+- [x] spec — `specs/lessons/lesson-03.spec.md` (синхр. с syllabus; frontmatter `status:` не менялся — только по команде пользователя)
 - [x] brief — `content/lectures/03-data-modeling-normalization/brief.md`
 - [x] outline — `content/lectures/03-data-modeling-normalization/outline.md`
 - [x] draft — `content/lectures/03-data-modeling-normalization/draft.md`
 - [ ] case — (отдельный файл не создавался, кейс встроен в draft/final)
 - [x] practice — `content/lectures/03-data-modeling-normalization/practice.md`
 - [x] diagrams — `content/lectures/03-data-modeling-normalization/diagrams.md`
-- [x] review — `content/lectures/03-data-modeling-normalization/review.md` (самопроверка агента; финальное ревью человеком не выполнено)
-- [ ] fact-check — требует проверки человеком (`fact-check.md` — протокол вопросов)
-- [x] final — `content/lectures/03-data-modeling-normalization/final.md` (кандидат в финал до прохождения review/fact-check человеком)
-- [x] slides — `content/lectures/03-data-modeling-normalization/slides.md`
+- [x] review — `content/lectures/03-data-modeling-normalization/review.md` (AI-самопроверка + **человеческий вердикт «Готов к итоговой генерации», 20.10.2026**)
+- [x] fact-check — `content/lectures/03-data-modeling-normalization/fact-check.md` (заполнен человеком 20.10.2026; замечания №1–2 применены; остаточный риск п.8 — регламент кафедры)
+- [x] final — `content/lectures/03-data-modeling-normalization/final.md` (**финальная версия**, статус-шапка обновлена 20.10.2026)
+- [x] slides — `content/lectures/03-data-modeling-normalization/slides.md` (пометки [фактчек] сняты по итогам human fact-check)
+- [ ] Расширение объёма final.md до ≥85 000 знаков (Этап E; выполняется поверх принятого финального текста, без изменения статуса)
 
 ### 4. История, эволюция и виды СУБД. Транзакции, PACELC и Data Governance
 **Статус:** 🟢 Полный пакет сгенерирован (11.10.2026, `content/lectures/04-data-architecture-dbms/`): brief → outline → draft → case/practice/diagrams → review (AI-самопроверка) → final-кандидат → slides. Ожидается **человеческое** решение вердикта в `review.md` и заполнение `fact-check.md`; до них final/slides — кандидаты. Spec не менялась (status: draft)
